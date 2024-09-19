@@ -34,7 +34,7 @@ arr_str3 = arr_str + arr_str2
 print(arr_str3)
 
 # Append to end of string - O(n)
-arr_str = arr_str + "watson"
+arr_str = arr_str + ["watson"]
 print(arr_str)
 
 # Check if something is in string - O(n)
