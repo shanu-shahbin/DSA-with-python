@@ -39,3 +39,21 @@ print("2D array:", arr_2d)
 # 3D array example
 arr_3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 print("3D array:", arr_3d)
+
+
+arr_int = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print("Original array:", arr_int)
+
+# Reverse array without built-in function
+# Time Complexity: O(n) - We swap elements from both ends of the array towards the center.
+# Space Complexity: O(1) - No extra space is used except for a few variables.
+arr_int = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+print("Original NumPy array:", arr_int)
+
+# Reverse the array without using a built-in function
+n = len(arr_int)
+for i in range(n // 2):
+    # Swap the elements at indices i and n-i-1
+    arr_int[i], arr_int[n-i-1] = arr_int[n-i-1], arr_int[i]
+
+print("Reversed NumPy array:", arr_int)
