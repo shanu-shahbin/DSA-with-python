@@ -3,6 +3,8 @@ import heapq
 # Heap Sort
 # Time: O(n log n), Space: O(n)
 # NOTE: O(1) Space is possible via swapping, but this is complex
+# Heap Push Pop: Time: O(log n)
+# Peak at Min: Time O(1)
 
 def heapsort(arr):
   heapq.heapify(arr)
